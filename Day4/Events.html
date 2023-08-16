@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>about page</title>
+        </head>
+        <body>
+            <h1>click the button to see a web event in action</h1>
+            <button onmouseover="functn ()"> Get me</button>
+            <script type="text/javascript">
+              function functn () { alert("hello,see me");}
+            </script>
+
+            <button id="mybutton">click me</button>  
+            <script>
+                const button=document.getElementById('mybutton');
+                button.addEventListener('click',function() {alert('button clicked');   });
+            </script>
+
+        </body>
+</html>            
+
+
