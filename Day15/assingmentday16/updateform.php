@@ -50,7 +50,7 @@
             $data= mysqli_fetch_assoc($result);
         
         ?>
-
+<!-- form for updating records -->
         <form action="processupdate.php" method="post">  
         <input type="hidden" name="id" value= "<?php echo $data['id']; ?>">
             <div class="mb-3">
