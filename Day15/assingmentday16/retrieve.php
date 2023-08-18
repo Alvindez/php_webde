@@ -3,42 +3,14 @@
     <head>
        <title>Home Page</title>
        <link rel="stylesheet"href="../bootstrap/css/bootstrap.min.css">
-       <link rel="stylesheet"href="/..styles.css">
+       <link rel="stylesheet"href="../styles.css">
        <link rel="stylesheet"href="../font--awesome.css">
 
     </head>
     <body>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="text-transform:uppercase">
-            <div class="container">
-                <a class="navbar-brand" href="#">My Website</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="home.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="Profile.html">Profile</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="Hobbies.html">Hobbies</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="Contact.html">Contact</a>
-                        </li>
-                        
-                        <li class="nav-item">
-                            <a class="nav-link" href="assingmentday16/retrieve.php"> IMS App </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="blog.html">Blog</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-    </nav>
+        <?php
+        include '../includes/nav.html';
+        ?>
 
 
 
@@ -60,7 +32,7 @@
             ."<h6 class='card-subtitle mb-2 text-muted'>" .$data['Quantity']."</h6>" ."</br>" 
 
 
-            . '<a href="updateform.php?id=' . $data['id'] .'"  class="btn btn-primary"> <i class="fas fa-edit"></i></a>'. 
+            . '<a href="updateform.php?id=' . $data['id'] .'"  class="btn btn-primary">Edit</a>'. 
              " " . '<a href="process_delete.php?id=' .$data['id'] .'"class="btn btn-sm btn-danger"
             onclick="return confirm(\'Are you sure you want to dele te this  record?\')">Delete</a>'. "<br />";
             echo "</div>";

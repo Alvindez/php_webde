@@ -46,6 +46,7 @@
         
       </div>
     </div>
+    <link rel="stylesheet"href="styles.css">
 
     <!-- footer row -->
     <?php

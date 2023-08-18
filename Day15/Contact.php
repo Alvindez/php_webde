@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <center>
     <title>Contact Page</title>
     <?php
     include 'includes/head.html';
     ?>
   </head>
-  <body>
+  <body style="background-color: gray ; background-position: center;">
     <div class="container-fluid">
 
       <!-- Nav row -->
-      <div class="row" style="border: 2px solid blue;">
+      <div class="row">
         <?php
         include 'includes/nav.html';
         ?>
@@ -20,9 +21,10 @@
       <div class="row" style="border: 2px solid red;">
         <h1>Contact Me</h1>
         <div class="container mt-5">
-          <div class="row justify">
+
+          <div class="row">
             <div class="col-md-6">
-              <form action="process_contact_form.php" method="post">
+              <form action="includes/process_contact_form.php" method="post">
                 <div class="mb-3">
                   <lable>firstName</lable>
                   <input type="text" class="form control" id="name" placeholder="Enter First Name" name="firstName">
@@ -50,17 +52,13 @@
                 <button type="submit" class="btn btn-info">Submit</button>
               </form>
             </div>
-            <div class="col-lg-2" style="background-color: aquamarine;">
-              <div class="section">mhsdhfjhvbbvkjhfsibyd syfa fiefya fewefvsgda buqywjsihdnjubf sufwjefu wasswa alvin dez come lets eat food tomorrow,th folowing day and the day after tomorrow</div>
-            </div>
-            <div class="col-lg-4">
-              <div class="section"><img src="images/images5.jpg" alt="My image"></div>
-            </div>
+            
           
           </div>
           
         </div>
       </div>
+      </center>
 
       <!-- footer row -->
       <?php

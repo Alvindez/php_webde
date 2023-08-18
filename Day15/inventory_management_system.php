@@ -6,7 +6,7 @@
       include 'includes/head.html';
       ?>
    </head>
-   <body bgco<lor="gray">
+   <body style="background-color: gray ; background-position: center;">
       <!-- Nav -->
       <div class="container-fluid">
          <div class="row" style="border: 2px solid blue;">

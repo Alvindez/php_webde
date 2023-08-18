@@ -1,47 +1,32 @@
 <!DOCTYPE html>
 <html>
    <head>
-      <title>Hobbies Page</title>
-      <?php
-      include 'includes/head.html';
-      ?>
+      <title>Home Page</title>
+  
+     <?php
+     include 'includes/head.html';
+     ?>
    </head>
-   <body bgcolor="gray">
-     <!-- Nav -->
-        <?php
-        include 'includes/nav.html';
-        ?>
-      <!-- Table -->
-      <div class="container">
-        <h1>My Hobbies</h1>
-        <table>
-            <tr>
-                <th>Indoor Hobbies</th>
-                <th>Outdoor Hobbies</th>
-            </tr>
-            <tr>
-                <td>Chess</td>
-                <td>Football</td>
-            </tr>
-            <tr>
-                <td>Ludo</td>
-                <td>Jogging</td>
-            </tr>
-            <tr>
-                <td>Cooking</td>
-                <td>Hiking</td>
-            </tr>
-            <tr>
-                <td>Video games</td>
-                <td>swiming</td>
-            </tr>
-        </table>
-        <link rel="stylesheet" href="stlyles.css">
+   <body style="background-color: gray ; background-position: center;">
+      <!-- Nav -->
+      <div class="container-fluid">
+         <div class="row" style="border: 2px solid blue;">
+            <?php
+            include 'includes/nav.html';
+            ?>
+         </div>
+         <?php
+         include 'includes/sliders.php'
+         ?>
+         <div class="row" style="border: 2px solid red;">
+            <link rel="stylesheet" href="stlyles.css"> 
+         </div>
+
+         <!-- Footer -->
+            <?php
+            include 'includes/footer.html';
+            ?>
       </div>
-      <!-- Footer -->
-      <?php
-      include 'includes/footer.html';
-      ?>
       <script src="bootstrap/js/bootstrap.min.js"></script>
    </body>
 </html>
