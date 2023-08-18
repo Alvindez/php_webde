@@ -23,7 +23,7 @@
         $result= mysqli_query($dbconnect,$query);
         while ($data=mysqli_fetch_assoc($result)) {
             
-            echo "<div class='col-md-3' style='border: 5px solid red'>";
+            echo "<div class='col-md-3' style='border: 3px'>";
             echo "<div class='card'>";
             echo "<h4 class='card-title'>" .$data['ItemName']."</h4>"."</br>" 
 

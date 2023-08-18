@@ -19,14 +19,41 @@ include '../includes/nav.html';
             <input type="password" name="pwdrepeat" placeholder="Repeat Password">
             <button type="submit" name="submit">Sign Up</button>
         </form>
-    </section>
-    <?php
-    if (isset($_GET["error"])) {
-        if ($_GET["error"] =="emptyinput") {
-            echo "<p>Fill all fields</p>";
+
+        <?php
+        if (isset($_GET["error"])) {
+            if ($_GET["error"] =="emptyinput") {
+                echo "<p>Fill all fields</p>";
+            }
+
+            if ($_GET["error"] =="invalidusername") {
+                echo "<p>Choose a proper username</p>";
+            }
+
+
+            if ($_GET["error"] =="invalidemail") {
+                echo "<p>Choose a proper email</p>";
+            }
+
+            if ($_GET["error"] =="passworddon'tmatch") {
+                echo "<p>Passwords don't match</p>";
+            }
+
+
+            if ($_GET["error"] =="stmtfailed") {
+                echo "<p>Something went wrong</p>";
+            }
+
+            if ($_GET["error"] =="usernametaken") {
+                echo "<p>Choose another username</p>";
+            }
+            if ($_GET["error"] =="none") {
+                echo "<p>You have signed up</p>";
+            }
         }
-    }
     ?>
+
+    </section>
 
 
 <?php
