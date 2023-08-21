@@ -45,6 +45,9 @@
         <?php
         include 'includes/footer.html';
         ?>
+        <div class="row" style="border: 2px solid red;">
+            <link rel="stylesheet" href="stlyles.css"> 
+        </div>
         <script src="bootstrap/js/bootstrap.min.js"></script>
 
     </body>

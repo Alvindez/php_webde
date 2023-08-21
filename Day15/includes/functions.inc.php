@@ -49,8 +49,8 @@
         return $result;
     }
 
-    function usernameExists($connect, $username) {
-      $sql ="SELECT* FROM user WHERE usersName = ? OR usersEmail = ?;";
+    function usernameExists($connect, $username, $email) {
+      $sql ="SELECT* FROM user WHERE usersUsername = ? OR usersEmail = ?;";
       
       $stmt= mysqli_stmt_init($connect);
       if (!mysqli_stmt_prepare($stmt, $sql)) {
@@ -92,6 +92,41 @@
         exit();
   
         
-  
-        
       }
+
+
+      function emptyInputLogin($username, $pwd) {
+        $result;
+        if (empty($username)|| empty($pwd)){
+            $result= "true";
+        }
+        else {
+            $result="false";
+        }
+        
+        return $result;
+    }
+
+    function loginusers($connect, $username, $pwd) {
+        $usernameExists = usernameExists($connect, $username, $username);
+
+        if ($usernameExists === false) {
+            header("loctaion: ../Lgin.php?error=wrongLogin");
+            exit();
+        }
+
+        $pwdHashed = $usernameExists["userPwd"];
+        $checkPwd = password_verify($pwd, $pwdHashed);
+
+        if ($checkPwd ===false) {
+            header("location: ../Login.php?error=wrongLogin");
+            exit();
+        }
+        else if ($checkPwd =true) {
+            session_start();
+            $_SESSION["id"] = $usernameExists["id"];
+            $_SESSION["userUsername"] = $usernameExists["userUsername"];
+            header("loctaion: ../Home.php");
+            exit();
+        }
+    }

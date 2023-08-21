@@ -59,6 +59,9 @@
         </div>
       </div>
       </center>
+      <div class="row" style="border: 2px solid red;">
+          <link rel="stylesheet" href="stlyles.css"> 
+      </div>
 
       <!-- footer row -->
       <?php

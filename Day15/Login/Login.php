@@ -13,6 +13,18 @@ include '../includes/nav.html';
             <input type="password" name="pwd" placeholder="Password">
             <button type="submit" name="submit">Sign Up</button>
         </form>
+        <?php
+        if (isset($_GET["error"])) {
+            if ($_GET["error"] =="emptyinput") {
+                echo "<p>Fill all fields</p>";
+            }
+
+            if ($_GET["error"] =="wrongLogin") {
+                echo "<p>Login info not correct</p>";
+            }
+
+        }
+    ?>
     </section>
 
 

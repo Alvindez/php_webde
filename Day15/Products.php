@@ -20,48 +20,48 @@
                   <div class="product">
                      <img src="images/im3.jpg">
                      <div class="product-info">
-                        <h4 class="product-title">hfthyt</h4>
+                        <h4 class="product-title">iPhone13</h4>
+                        <p class="product-price">$350</p>
+                        <a class="product-btn" href="#">Buy now</a>
+                     </div>
+                  </div>
+                  <div class="product">
+                     <img src="images/im6.jpg">
+                     <div class="product-info">
+                        <h4 class="product-title">Google pixel phone</h4>
+                        <p class="product-price">$250</p>
+                        <a class="product-btn" href="#">Buy now</a>
+                     </div>
+                  </div>
+                  <div class="product">
+                     <img src="images/im7.jpg">
+                     <div class="product-info">
+                        <h4 class="product-title">Redmi</h4>
                         <p class="product-price">$200</p>
                         <a class="product-btn" href="#">Buy now</a>
                      </div>
                   </div>
                   <div class="product">
-                     <img src="images/im3.jpg">
+                     <img src="images/im8.jpg">
                      <div class="product-info">
-                        <h4 class="product-title">hfthyt</h4>
-                        <p class="product-price">$200</p>
+                        <h4 class="product-title">iPhone7</h4>
+                        <p class="product-price">$400</p>
                         <a class="product-btn" href="#">Buy now</a>
                      </div>
                   </div>
                   <div class="product">
-                     <img src="images/im3.jpg">
+                     <img src="images/im4.jpg">
                      <div class="product-info">
-                        <h4 class="product-title">hfthyt</h4>
-                        <p class="product-price">$200</p>
+                        <h4 class="product-title">Samsung</h4>
+                        <p class="product-price">$300</p>
                         <a class="product-btn" href="#">Buy now</a>
                      </div>
                   </div>
                   <div class="product">
-                     <img src="images/im3.jpg">
+                     <img src="images/im2.jpg">
                      <div class="product-info">
-                        <h4 class="product-title">hfthyt</h4>
-                        <p class="product-price">$200</p>
-                        <a class="product-btn" href="#">Buy now</a>
-                     </div>
-                  </div>
-                  <div class="product">
-                     <img src="images/im3.jpg">
-                     <div class="product-info">
-                        <h4 class="product-title">hfthyt</h4>
-                        <p class="product-price">$200</p>
-                        <a class="product-btn" href="#">Buy now</a>
-                     </div>
-                  </div>
-                  <div class="product">
-                     <img src="images/im3.jpg">
-                     <div class="product-info">
-                        <h4 class="product-title">hfthyt</h4>
-                        <p class="product-price">$200</p>
+                        <h4 class="product-title">Port hub</h4>
+                        <p class="product-price">$50</p>
                         <a class="product-btn" href="#">Buy now</a>
                      </div>
                   </div>
